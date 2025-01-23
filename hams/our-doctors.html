@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the expert medical professionals at Life Care Hospital. Our team of doctors are highly experienced and specialize in various fields of healthcare.">
+    <meta name="keywords" content="Life Care Hospital, doctors, healthcare, neurologist, orthopedic surgeon, pediatrician, dermatologist, cardiologist, general surgeon">
+    <title>Our Doctors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        .doctor-card {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .doctor-card:hover {
+            transform: translateY(-5px);
+        }
+        .doctor-card .btn {
+            transition: background-color 0.3s ease;
+        }
+        .doctor-card .btn:hover {
+            background-color: #0056b3;
+        }
+        .btn-outline-light {
+    font-size: 1.2rem; /* Adjust font size */
+    padding: 10px 20px; /* Add consistent vertical and horizontal padding */
+    border: 2px solid #fff; /* Outline style with light color */
+    color: #fff; /* Text color */
+    background-color: transparent; /* Transparent background */
+    border-radius: 5px; /* Optional: Rounded corners */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.btn-outline-light:hover {
+    background-color: #fff; /* Background color on hover */
+    color: #333; /* Text color on hover */
+}
+
+        .hospital-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <!-- Hospital Name with Logo -->
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center">
+                    <img src="logo1.png" alt="Life Care Hospital Logo" class="me-3" style="width: 150px; height: 150px; object-fit: contain;">
+                    <h1 class="hospital-name m-0">Life Care Hospital</h1>
+                </div>
+            </div>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html"><b>Home</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="about us.html"><b>About Us</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="our-doctors.html"><b>Our Doctors</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="book-appointment.html"><b>Book Appointment</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="view-appointments.php"><b>View Appointments</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html"><b>Contact Us</b></a></li>
+                    </ul>
+                    <div class="d-flex gap-3">
+                        <a href="login.html" class="btn btn-outline-light btn-lg"><b>Patient Login</b></a>
+                        <a href="doctor-login.html" class="btn btn-outline-light btn-lg"><b>Doctor Login</b></a>
+                        <a href="register.html" class="btn btn-outline-light btn-lg"><b>Register</b></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>    
+
+    <main class="container py-5">
+        <h2 class="text-center text-primary">Our Doctors</h2>
+        <p class="text-center text-muted mb-4">Meet our team of expert medical professionals.</p>
+
+        <div class="row">
+            <!-- Doctor 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="doctor-card text-center p-4 rounded">
+                    <img src="d4.jpeg" alt="Dr. Swapnali Bankar, Neurologist" class="img-fluid rounded-circle mb-3" width="150">
+                    <h5 class="text-primary">Dr. Swapnali Bankar</h5>
+                    <p class="text-muted">Neurologist</p>
+                    <a href="D1-P.html" class="btn btn-primary">View Profile</a>
+                </div>
+            </div>
+            <!-- Doctor 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="doctor-card text-center p-4 rounded">
+                    <img src="D1.jpg" alt="Dr. Arshad Shaikh, Orthopedic Surgeon" class="img-fluid rounded-circle mb-3" width="150">
+                    <h5 class="text-primary">Dr. Arshad Shaikh</h5>
+                    <p class="text-muted">Orthopedic Surgeon</p>
+                    <a href="D2-P.html" class="btn btn-primary">View Profile</a>
+                </div>
+            </div>
+            <!-- Doctor 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="doctor-card text-center p-4 rounded">
+                    <img src="d2.jpg" alt="Dr. Rutik Badhe, Pediatrician" class="img-fluid rounded-circle mb-3" width="150">
+                    <h5 class="text-primary">Dr. Rutik Badhe</h5>
+                    <p class="text-muted">Pediatrician</p>
+                    <a href="D3-P.html" class="btn btn-primary">View Profile</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Doctor 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="doctor-card text-center p-4 rounded">
+                    <img src="d5.jpeg" alt="Dr. Isha Khokrale, Dermatologist" class="img-fluid rounded-circle mb-3" width="150">
+                    <h5 class="text-primary">Dr. Isha Khokrale</h5>
+                    <p class="text-muted">Dermatologist</p>
+                    <a href="D4-P.html" class="btn btn-primary">View Profile</a>
+                </div>
+            </div>
+            <!-- Doctor 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="doctor-card text-center p-4 rounded">
+                    <img src="d2.jpg" alt="Dr. Rohan Badhe, Cardiologist" class="img-fluid rounded-circle mb-3" width="150">
+                    <h5 class="text-primary">Dr. Rohan Badhe</h5>
+                    <p class="text-muted">Cardiologist</p>
+                    <a href="D5-P.html" class="btn btn-primary">View Profile</a>
+                </div>
+            </div>
+            <!-- Doctor 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="doctor-card text-center p-4 rounded">
+                    <img src="D3.jpg" alt="Dr. Prathmesh Kabadi, General Surgeon" class="img-fluid rounded-circle mb-3" width="150">
+                    <h5 class="text-primary">Dr. Prathmesh Kabadi</h5>
+                    <p class="text-muted">General Surgeon</p>
+                    <a href="D6-P.html" class="btn btn-primary">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white text-center py-3 bg-dark">
+        <p>&copy; 2024 Life Care Hospital. All rights reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

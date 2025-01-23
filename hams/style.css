@@ -1,0 +1,238 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: linear-gradient(to bottom, #e8f5e9, #ffffff);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(to right, #009688, #4CAF50);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 15px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #A5D6A7;
+    transform: scale(1.1);
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #009688, #4CAF50);
+    color: #fff;
+    padding: 2.5rem 0;
+    text-align: center;
+    border-bottom: 5px solid #00695C;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Main Content Styling */
+main {
+    background: #ffffff;
+    padding: 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 900px;
+    animation: slideIn 1s ease-in-out;
+    flex: 1;
+}
+
+/* Buttons */
+.btn {
+    background: linear-gradient(to right, #66bb6a, #43a047);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #81c784, #388e3c);
+    transform: scale(1.1);
+}
+
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border: 2px solid #c8e6c9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+form .form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+form .form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #c8e6c9;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form .form-control:focus {
+    border-color: #388e3c;
+    outline: none;
+    box-shadow: 0 0 8px rgba(56, 142, 60, 0.5);
+}
+
+form .form-control::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Submit Button */
+form .btn {
+    background: linear-gradient(to right, #66bb6a, #43a047);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form .btn:hover {
+    background: linear-gradient(to right, #81c784, #388e3c);
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(to right, #0f9d58, #004d40);
+    color: #ffffff;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-top: 4px solid #2e7d32;
+    font-size: 1.1rem;
+    box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.3);
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+footer a {
+    color: #b9f6ca;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer a:hover {
+    color: #e8f5e9;
+    transform: scale(1.1);
+}
+
+footer .social-icons a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #81c784;
+    transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        padding: 1.5rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

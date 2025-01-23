@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment System - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom Styles */
+        .hero {
+            background: linear-gradient(to right, #e8f5e9, #ffffff);
+            color: black;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .hero h2 {
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .btn-custom {
+            background-color: #20c997;
+            color: white;
+            font-size: 1rem;
+            padding: 8px 20px;
+            border-radius: 30px;
+        }
+        .btn-outline-light {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            color: #fff;
+            background-color: transparent;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .btn-outline-light:hover {
+            background-color: #fff;
+            color: #333;
+        }
+        .features {
+            background-color: #f0f9ff;
+        }
+        .feature-card {
+            border: 1px solid #d1e7fd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .testimonials {
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <!-- Hospital Name with Logo -->
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center">
+                    <img src="logo1.png" alt="Hospital Logo" class="me-3" style="width: 150px; height: 150px; object-fit: contain;">
+                    <h1 class="hospital-name m-0">Life Care Hospital</h1>
+                </div>
+            </div>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html"><b>Home</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="about us.html"><b>About Us</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="our-doctors.html"><b>Our Doctors</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="book-appointment.html"><b>Book Appointment</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="view-appointments.php"><b>View Appointments</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html"><b>Contact Us</b></a></li>
+                    </ul>
+                    <div class="d-flex gap-3">
+                        <a href="login.html" class="btn btn-outline-light btn-sm"><b>Patient Login</b></a>
+                        <a href="doctor-login.html" class="btn btn-outline-light btn-sm"><b>Doctor Login</b></a>
+                        <a href="register.html" class="btn btn-outline-light btn-sm"><b>Register</b></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero bg-light py-5 d-flex align-items-center justify-content-center" style="height: 60vh;">
+        <div class="container text-center">
+            <h2 class="display-4 fw-bold">Welcome to Life Care Hospital</h2>
+            <p class="lead">Your trusted companion for managing hospital appointments with ease.</p>
+            <a href="book-appointment.html" class="btn btn-custom btn-lg mt-3">Book Your Appointment Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card p-4 bg-white">
+                        <img src="care.jpg" alt="Expert Care" class="mb-3" style="width: 150px;">
+                        <h5 class="fw-bold">Expert Medical Care</h5>
+                        <p>We provide the highest quality healthcare services with experienced doctors and modern facilities.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card p-4 bg-white">
+                        <img src="appointment.png" alt="Appointment" class="mb-3" style="width: 300px;">
+                        <h5 class="fw-bold">Easy Appointments</h5>
+                        <p>Book appointments effortlessly online and save time for your health priorities.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card p-4 bg-white">
+                        <img src="support.jpg" alt="Support" class="mb-3" style="width: 150px;">
+                        <h5 class="fw-bold">24/7 Support</h5>
+                        <p>Our dedicated team is available round-the-clock to assist you with your queries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials bg-light py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow">
+                        <h5 class="fw-bold">Modern Equipment</h5>
+                        <p>Experience world-class treatment with cutting-edge technology.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow">
+                        <h5 class="fw-bold">Affordable Care</h5>
+                        <p>High-quality healthcare services that suit your budget.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow">
+                        <h5 class="fw-bold">Trusted by Thousands</h5>
+                        <p>Join our community of satisfied patients across the region.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faq py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">Frequently Asked Questions (FAQs)</h3>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                            How can I book an appointment?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can book an appointment easily through our website. Just visit the 'Book Appointment' section and select your preferred doctor and time.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                            What should I bring to my appointment?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Please bring a valid ID, your insurance details (if applicable), and any medical records or prescriptions relevant to your visit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Life Care Hospital. All rights reserved. | <a href="privacy-policy.html" class="text-white">Privacy Policy</a></p>
+        <div class="social-links">
+            <a href="https://facebook.com/lifecarehospital" target="_blank" class="text-white mx-3">Facebook</a>
+            <a href="https://twitter.com/lifecarehospital" target="_blank" class="text-white mx-3">Twitter</a>
+            <a href="https://instagram.com/lifecarehospital" target="_blank" class="text-white mx-3">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

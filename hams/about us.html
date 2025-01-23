@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Life Care Hospital, our mission, vision, and core values. We provide exceptional healthcare services with compassion and innovation.">
+    <meta name="keywords" content="Life Care Hospital, healthcare, hospital services, medical team, core values">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hospital-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .hospital-header {
+            text-align: center;
+            margin-bottom: 10px;
+            padding: 20px 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .btn-outline-light {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            color: #fff;
+            background-color: transparent;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .btn-outline-light:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgb(249, 235, 235);
+            font-weight: bold;
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #f8d210;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        /* About Section */
+        .about-section {
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section h2 {
+            color: #007bff;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .about-section h2:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Core Values Section */
+        .values-section {
+            background: #4CAF50;  /* Green background */
+            color: #000000;       /* Black font color */
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .values-section h3 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .value-card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 180px;
+            height: 180px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .value-card i {
+            font-size: 4rem;
+            margin-bottom: 15px;
+            color: #4CAF50;  /* Green icons */
+            transition: color 0.3s ease-in-out;
+        }
+
+        .value-card:hover i {
+            color: #2e7d32;  /* Darker green on hover */
+        }
+
+        .value-card p {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #000; /* Black text */
+            text-transform: uppercase;
+        }
+
+        .values-section p {
+            font-size: 1.1rem;
+            color: black;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Image Section */
+        .image-section img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Adding some spacing between the elements */
+        .container {
+            margin-top: 40px;
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .footer {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <!-- Hospital Name with Logo -->
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="d-flex align-items-center">
+                    <img src="logo1.png" alt="Hospital Logo" class="me-3" style="width: 150px; height: auto; object-fit: contain;">
+                    <h1 class="hospital-name m-0">Life Care Hospital</h1>
+                </div>
+            </div>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html"><b>Home</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="about us.html"><b>About Us</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="our-doctors.html"><b>Our Doctors</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="book-appointment.html"><b>Book Appointment</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="view-appointments.php"><b>View Appointments</b></a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html"><b>Contact Us</b></a></li>
+                    </ul>
+                    <div class="d-flex gap-3">
+                        <a href="login.html" class="btn btn-outline-light btn-lg"><b>Patient Login</b></a>
+                        <a href="doctor-login.html" class="btn btn-outline-light btn-lg"><b>Doctor Login</b></a>
+                        <a href="register.html" class="btn btn-outline-light btn-lg"><b>Register</b></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>    
+
+    <main class="container py-5">
+        <!-- Image Section -->
+        <div class="image-section text-center mb-4">
+            <img src="HM.jpeg" alt="Hospital Image" class="img-fluid rounded shadow-lg" loading="lazy">
+            <figcaption class="text-muted mt-2">Our State-of-the-Art Hospital Facilities</figcaption>
+        </div>
+
+        <!-- About Section -->
+        <div class="about-section bg-light p-5 rounded shadow-lg">
+            <h2 class="text-primary mb-3">Welcome to Life Care Hospital</h2>
+            <p class="lead">
+                At Life Care Hospital, we are dedicated to delivering exceptional healthcare services with compassion, innovation, and excellence. 
+                Our state-of-the-art facilities and expert medical team ensure that every patient receives personalized and top-quality care.
+            </p>
+            
+            <h2 class="text-primary mb-3">Our Mission</h2>
+            <p class="lead">
+                To provide accessible, affordable, and comprehensive healthcare solutions while upholding the highest standards of medical ethics and professionalism.
+            </p>
+            
+            <h2 class="text-primary mb-3">Our Vision</h2>
+            <p class="lead">
+                To be a leader in healthcare by embracing technological advancements and fostering a patient-centric approach to wellness.
+            </p>
+        </div>
+
+        <!-- Core Values Section -->
+        <div class="values-section text-center bg-gradient p-5 rounded my-5 shadow-lg">
+            <h3>Our Core Values</h3>
+            <div class="d-flex justify-content-center flex-wrap gap-4">
+                <div class="value-card text-center">
+                    <i class="bi bi-heart-fill" aria-label="Compassion"></i>
+                    <p>Compassion</p>
+                </div>
+                <div class="value-card text-center">
+                    <i class="bi bi-trophy-fill" aria-label="Excellence"></i>
+                    <p>Excellence</p>
+                </div>
+                <div class="value-card text-center">
+                    <i class="bi bi-shield-lock-fill" aria-label="Integrity"></i>
+                    <p>Integrity</p>
+                </div>
+                <div class="value-card text-center">
+                    <i class="bi bi-lightbulb-fill" aria-label="Innovation"></i>
+                    <p>Innovation</p>
+                </div>
+                <div class="value-card text-center">
+                    <i class="bi bi-person-fill" aria-label="Respect"></i>
+                    <p>Respect</p>
+                </div>
+            </div>
+            <p>
+                These values drive our commitment to improving the lives of our patients and ensuring a healthier future for all.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2024 Life Care Hospital. Designed with care for you.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

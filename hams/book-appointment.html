@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Book Appointment</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .form-label {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-select, .form-control, .btn {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-select:focus, .form-control:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Button centered style */
+        button[type="submit"] {
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Adjust spacing and layout for mobile screens */
+        @media (max-width: 767px) {
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+    <script>
+        async function fetchDoctors() {
+            const specialization = document.getElementById("specialization").value;
+            const doctorDropdown = document.getElementById("doctor");
+
+            // Clear previous options
+            doctorDropdown.innerHTML = "<option value=''>Select Doctor</option>";
+
+            if (specialization) {
+                const response = await fetch(`get-doctors.php?specialization=${specialization}`);
+                const doctors = await response.json();
+
+                doctors.forEach(doctor => {
+                    const option = document.createElement("option");
+                    option.value = doctor.name;
+                    option.textContent = doctor.name;
+                    doctorDropdown.appendChild(option);
+                });
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Book Appointment</h1>
+    </header>
+    <main class="container">
+        <form action="book-appointment.php" method="POST">
+            <!-- Specialization Dropdown -->
+            <div class="mb-3">
+                <label for="specialization" class="form-label">Select Specialization</label>
+                <select id="specialization" name="specialization" class="form-select" onchange="fetchDoctors()" required>
+                    <option value="">Select Specialization</option>
+                    <option value="Neurologist">Neurologist</option>
+                    <option value="Orthopedic Surgeon">Orthopedic Surgeon</option>
+                    <option value="Pediatrician">Pediatrician</option>
+                    <option value="Dermatologist">Dermatologist</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="General Surgeon">General Surgeon</option>
+                </select>
+            </div>
+            <!-- Doctor Dropdown -->
+            <div class="mb-3">
+                <label for="doctor" class="form-label">Select Doctor</label>
+                <select id="doctor" name="doctor" class="form-select" required>
+                    <option value="">Select Doctor</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Select Date</label>
+                <input type="date" id="date" name="date" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="time" class="form-label">Select Time</label>
+                <input type="time" id="time" name="time" class="form-control" required>
+            </div>
+            <button type="submit" class="btn">Book Appointment</button>
+        </form>
+    </main>
+</body>
+</html>
